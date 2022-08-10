@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:target{
+    scroll-margin-top: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    background: -webkit-linear-gradient(rgb(27, 27, 27, 0.8), rgb(27, 27, 27, 0.8)) , url('./assets/back.gif');
+    background-attachment: fixed;
+    background-size: 100% 100vh;
+    background-color: #1b1b1b;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-inline: 65px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1b1b1b;
+    height: 70px;
+    z-index: 2;
+}
+
+.box-shadow-bottom{
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)
+}
+
+.box-shadow-top{
+    box-shadow: 2px -4px 4px -1px rgb(0 0 0 / 20%), 3px -4px 5px 0px rgb(0 0 0 / 14%), 3px -7px 10px 0px rgb(0 0 0 / 12%)
+}
+
+.box-shadow-bottom-top{
+    box-shadow: 1px -4px 4px -1px rgb(0 0 0 / 20%), 3px -4px 5px 0px rgb(0 0 0 / 14%), 3px -7px 10px 0px rgb(0 0 0 / 12%), 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)
+}
+
+.name-page a{
+    font-size: 25px;
+    width: 100%;
+}
+
+header a{
+    color: #FFF;
+    padding-inline: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.first-block{
+    background-color: transparent;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-block img{
+    width: 180px;
+    border-radius: calc(100% / 2);
+    padding: 30px;
+}
+
+.first-block h1{
+    padding: 10px;
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.first-block p{
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.block-social{
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+}
+
+.block-social a{
+    color: #FFF;
+    font-size: 25px;
+}
+
+.second-block{
+    padding: 54px;
+    width: 100%;
+    background-color: #fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.second-block h2{
+    padding-bottom: 15px;
+    font-size: 38px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.second-block p{
+    padding-block: 1px;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.third-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+.third-block h2{
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.fourth-block{
+    position: relative;
+    background-color: #FFF;
+    justify-content: center;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.line-fouth-block{
+    position: absolute;
+    background-image: linear-gradient(180deg,#fff 0,#1b1b1b 30px,#1b1b1b calc(100% - 30px),#fff);
+    height: calc(100% - 4em);
+    width: 4px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div-timeline{
+    padding-block: 3em;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    width:85%;
+}
+
+.div-timeline:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.div-timeline:nth-child(odd) .span-date-timeline{
+    right: 8em;
+    font-size: 23px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    color: #1b1b1b;
+}
+
+.div-timeline:nth-child(even) .span-date-timeline{
+    left: 8em;
+    font-size: 23px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    color: #1b1b1b;
+}
+
+
+.div-icons-timeline{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-timeline-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-timeline-div span:first-child{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border: 4px solid #1b1b1b;
+    border-radius: 50%;
+    background: #ffffff;
+
+}
+
+.icon-timeline{
+    font-size: 45px;
+}
+
+.div-info-timeline{
+    width: 44%;
+    margin-left: 0;
+    padding: 1.5em;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 1px 4px 4px -1px rgb(0 0 0 / 20%), 3px 4px 5px 0px rgb(0 0 0 / 14%), 3px 7px 10px 0px rgb(0 0 0 / 12%), 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)
+}
+
+.div-info-timeline h3{
+    padding-bottom: 0.8em;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+}
+
+.div-info-timeline p{
+    padding-block: 1px;
+    font-size: 23px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: #1b1b1b;
+}
+
+.div-info-timeline p a{
+    text-decoration: none;
+    color: #1b1b1b;
+    font-weight: 400;
+}
+
+.span-date-timeline{
+    font-size: 1rem;
+    position: relative;
+}
+
+footer{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+}
+
+.footer-social{
+    padding: 15px;
+    display: flex;
+}
+
+.footer-social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 20px;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 5px;
+    margin-inline: 5px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+}
+
+.footer-anchor{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    gap: 25px;
+    padding-top: 20px;
+    padding-bottom: 55px;
+}
+
+.footer-anchor a{
+    color: #FFF;
+}
+
+.footer-credit{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 2px;
+    background-color: #c1c1c1;
+}
+
+.footer-credit p, .footer-credit a{
+    color: #1b1b1b;
+    text-decoration: none;
+}
