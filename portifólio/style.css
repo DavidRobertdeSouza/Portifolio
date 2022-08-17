@@ -1,0 +1,83 @@
+main{
+  padding: 8px;
+}
+
+.section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  margin: 0 35px 50px 35px;
+  padding-inline: 50px;
+}
+
+.section-cursos{
+  margin-top: 70px !important;
+}
+
+.title-section{
+  grid-column: span 3;
+  color: #FFF;
+  font-size: 45px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  padding: 30px;
+}
+
+.title-section>i{
+  margin-right: 20px;
+}
+
+.box{
+  position: relative;
+  height: 300px;
+  background-color: #FFF;
+  border-radius: 15px;
+  border: 2px solid rgb(70 70 70);
+  box-shadow: 4px 2px 3px rgb(70 70 70 / 58%);
+}
+
+.link-box{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+}
+
+.box>img{
+  border-radius: 15px 15px 0 0 ;
+  width: 100%;
+  height: 200px;
+}
+
+.div-infos{
+  display: grid;
+  gap: 2px;
+  padding: 5px;
+  height: 100px;
+  bottom: 5px;
+  position: relative;
+}
+
+.div-infos>h3 {
+  text-decoration: none;
+  color: #000000d1;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.div-infos>p {
+  text-decoration: none;
+  color: #000000ad;
+  font-size: 17px;
+}
+
+.div-infos>a {
+  width: fit-content;
+  text-decoration: none;
+  color: #000000ad;
+  font-weight: bold;
+  font-size: 17px;
+  border: 2px solid;
+  border-radius: 4px;
+  margin: 3px;
+}
