@@ -1,8 +1,13 @@
+@font-face {
+  font-family: 'icones';
+  src: url(./assets/font/icones.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', 'icones', sans-serif;
 }
 
 html{
@@ -118,3 +123,67 @@ footer{
   color: #1b1b1b;
   text-decoration: none;
 }
+
+.cabecalho__menu{
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  
+  .menu-lateral--ativo{
+    left: 0;
+    transition: .25s;
+  }
+
+  .container-menu{
+    display: none;
+  }
+
+  .cabecalho__menu{
+    background: transparent;
+    border: none;
+    color: #FFF;
+    display: block;
+    position: absolute;
+    left: 25px;
+  }
+  
+  .cabecalho__menu i::before{
+    content: "\e904";
+    font-size: 24px;
+    font-style: normal;
+    background-color: transparent;
+  }
+  
+  .menu-lateral{
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1b1b;
+    width: 75vw;
+    height: calc(100% - 70px); 
+    position: fixed;
+    z-index: 2;
+    left: -100vw;
+    transition: .25s;
+    bottom: 0;
+    padding: 20px 10px;
+    gap: 15px;
+  }
+  
+  .menu-lateral--ativo{
+    left: 0;
+    transition: .25s;
+  }
+
+  .menu-lateral a{
+    color: #FFF;
+    padding-inline: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
+}
+
+

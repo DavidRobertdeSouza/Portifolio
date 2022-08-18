@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .first-block img{
@@ -42,7 +43,7 @@
 }
 
 .second-block{
-    padding: 54px;
+    padding: 54px 6vw;
     width: 100%;
     background-color: #fff;
     display:flex;
@@ -109,7 +110,7 @@
     height: fit-content;
     display: flex;
     position: relative;
-    width:85%;
+    width:95%;
 }
 
 .div-timeline:nth-child(odd) {
@@ -168,7 +169,7 @@
 }
 
 .div-info-timeline{
-    width: 44%;
+    width: 42%;
     margin-left: 0;
     padding: 1.5em;
     position: relative;
@@ -205,3 +206,8 @@
     font-size: 1rem;
     position: relative;
 }
+
+
+@media screen and (max-width: 900px) {
+    
+  }
