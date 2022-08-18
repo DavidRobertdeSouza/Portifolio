@@ -5,7 +5,7 @@ main{
 .section{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 50px;
+  gap: 50px;
   margin: 0 35px 50px 35px;
   padding-inline: 50px;
 }
@@ -21,7 +21,7 @@ main{
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  padding: 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .title-section>i{
