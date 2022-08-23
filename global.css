@@ -115,6 +115,7 @@ footer{
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
   padding: 2px;
   background-color: #c1c1c1;
 }
@@ -122,6 +123,7 @@ footer{
 .footer-credit p, .footer-credit a{
   color: #1b1b1b;
   text-decoration: none;
+  width: 50%;
 }
 
 .cabecalho__menu{
