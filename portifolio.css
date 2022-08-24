@@ -89,3 +89,27 @@ main{
   margin: 3px;
   padding: 2px;
 }
+
+
+@media screen and (max-width: 900px) {
+  
+  header{
+    padding-inline: 30px;
+  }
+
+  .section{
+    margin: 0;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding-inline: 20px;
+  }
+
+  .section{
+    margin-bottom: 50px;
+  }
+
+  .title-section{
+    grid-column: span 1;
+    text-align: center;
+  }
+}
