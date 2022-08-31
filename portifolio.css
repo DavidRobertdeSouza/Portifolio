@@ -90,8 +90,21 @@ main{
   padding: 2px;
 }
 
+@media screen and (max-width: 1400px) {
+  .section{
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding-inline: 20px;
+  }
 
-@media screen and (max-width: 900px) {
+  .title-section{
+    grid-column: span 2;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
   
   header{
     padding-inline: 30px;
